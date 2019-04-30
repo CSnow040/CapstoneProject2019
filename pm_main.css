@@ -11,20 +11,10 @@
     Filename: pm_main.css 
 */
 
-.wrapper {
-    background: #f2b02b;
-}
 
-.body {
-    margin: auto;
-    max-width: 1050px;
-    background: #e5e5e5;
-}
-
-#home-img {
-    width: 75%;
-    height: 75%;
-    padding: none;
+body {
+  width: 100%;
+  background: #f2b02b;
 }
 
 ul {
