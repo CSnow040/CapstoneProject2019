@@ -211,6 +211,23 @@ display: none;
 }
 /* Section Styles */
 /* Map Styles */
+/* Form Styles */
+fieldset{
+    width: 100%;
+    max-width: 680px;
+    margin: 100px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+legend{
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 2em;
+}
+input{
+    width: 100%;
+    margin: 25px 0;
+}
 /* Footer Styles */
 footer{
   position: absolute;
