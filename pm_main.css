@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "UTF-8";
 
 /* 
     Capstone 2019 Project
@@ -12,30 +12,169 @@
 */
 
 /* Base Styles */
-body {
-    width: 100%;
+/* Sets a global variable*/
+:root{
+    --westmecOrange: rgba(211, 127, 18, 0.85);
+}
+
+/* Sets the margin of the body to 0 and the background to a dark gray to black color. The font weight is set to 400 and a font family is used */
+body{
+    margin: 0;
     background: #f2b02b;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 300;
+}
+/* Navigation Styles */
+/* Uses the westmecOrange variable to set the color of the header, aligns the text in the center, the position is fixed so it will always show on the page, has a z-index set to the highest it can go so it is always on top, and has full width of the page */
+header{
+    background: var(--westmecOrange);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width:100%
+}
+/* The nav is set to absolute position so that it can drop down, the text is aligned to the left of the nav, */
+nav{
+    position: absolute;
+    text-align: left;
+    /* top: 100%; */
+    /* left:0; */
+background: var(--westmecOrange);
+width: 100%;
+/* Makes the element squished all the way horizontally */
+transform: scale(1,0);
+/* The origin on the transformation will be on the top */
+transform-origin: top;
+transition: transform 400ms ease-in-out
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 
-/* Navbar Styles */
-/* Photo Carousel */
-
-/* .carousel-container {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
+nav li{
+    margin-bottom: 1em;
+    margin-left: 1em;
 }
 
-.carousel-slide {
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+opacity: 0;
+transition: opacity 150ms ease-in-out;
+}
+/* Text becomes black when hovered above */
+nav a:hover{
+    color: black;
+}
+/* The nav element that is a sibiling of the nav-toggle class is being displayed*/
+.nav-toggle:checked ~ nav{
+    transform: scale(1,1)
+}
+
+.nav-toggle{
+display: none;
+}
+
+.nav-toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
     display: flex;
-    width: 100%;
-    height: 500px;
-} */
-
-li a:hover {
-  background-color: #111;
+    align-items: center;
+}
+/* The following all creates 3 white bar lines that will be used to replace the checkbox, which is being used to represent the navigation menu which the user can click to expand on */
+.nav-toggle-label span, .nav-toggle-label span::before,.nav-toggle-label span::after{
+    display: block;
+    background: white;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+.nav-toggle-label span::before,.nav-toggle-label span::after{
+    content: '';
+    position: absolute
 }
 
+.nav-toggle-label span::before{
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+    top: 7px;
+}
+/* Targeting the nav links that are sibilings of the nav toggle class that has been checked, when it is checked the user can see the links and a tranisition is used for it to appear */
+.nav-toggle:checked ~ nav a{
+    opacity:1;
+    transition: opacity 250ms ease-in-out 250ms
+
+}
+/* Targets screen that are 800 pixels and larger */
+@media screen and (min-width: 800px){
+    /* The nav togel label is no longer displayed */
+    .nav-toggle-label{
+        display: none;
+    }
+    /* The header is displayed in grids, with one column an */
+    header{
+        display: grid;
+        grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr
+    }
+    /* The logo spans from the 2nd to 3rd colum */
+    .logo{
+        grid-column: 2/ 3;
+    }
+    /*  */
+    nav{
+        /* Undid all of the earlier mobile version features added to the nav */
+        all: unset;
+        /* It takes up columns 3-4 */
+        grid-column: 3/4;
+        /* The display is flex so that is moves as the screen is squished */
+        display: flex;
+        /* Pushes the content to the end of the flex, or in this case to the right of the page */
+        justify-content: flex-end;
+        /* Everything in the nav is aligned to the center of the element */
+        align-items: center;
+    }
+    /* Shows the links and the animation for when the link is hovered above */
+    nav a{
+        opacity: 1;
+        position: relative
+    }
+/* Displays the ul nested in the nav as flex so that they are organized in a line */
+    nav ul{
+        display: flex;
+    }
+    /* Sets the margins of the navigation list items */
+    nav li{
+        margin-left: 3em;
+        margin-bottom: 0;
+    }
+    /*Creates the animation for when the nav is hovered above, it creates a bar that will appear above each link and will ease in and out in 250ms */
+    nav a::before{
+        content: '';
+        display: block;
+        height: 5px;
+        background: black;
+        position: absolute;
+        top: -.5em;
+        left: 0;
+        right: 0;
+        transform: scale(0,1);
+        transition: transform ease-in-out 250ms;
+    }
+    /* Shows the animation when the links are hovered above */
+    nav a:hover::before{
+        transform: scale(1,1);
+    }
+}
 /* Social Media Icons */
 .fa {
   padding: 10px;
@@ -73,4 +212,9 @@ li a:hover {
 /* Section Styles */
 /* Map Styles */
 /* Footer Styles */
+footer{
+  position: absolute;
+  bottom: 0;
+  width:100%;
+}
 /* Mobile Styles */
