@@ -13,7 +13,8 @@
 
 /* Mobile Styles */
 html {
-  background-image: url(campus.jpg);
+    background-image: url(campus.jpg);
+    background-size: cover;
 }
 
 /* Sets a global variable*/
@@ -23,23 +24,22 @@ html {
 
 /* Sets the margin of the body to 0 and the background to a dark gray to black color. The font weight is set to 400 and a font family is used */
 body {
-  width: 75%;
+  /* width: 75%; */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 300;
+  margin: auto;
 }
 
 /* Navigation Styles */
 /* Uses the westmecOrange variable to set the color of the header, aligns the text in the center, the position is fixed so it will always show on the page, has a z-index set to the highest it can go so it is always on top, and has full width of the page */
 header {
   background: black;
-  position: absolute;
+  position: relative;
   text-align: center;
-  width: 100%
+  width: 100%;
+  z-index: 999;
 }
 
-header>.logo {
-  color: white;
-}
 
 /* The nav is set to absolute position so that it can drop down, the text is aligned to the left of the nav, */
 nav {
@@ -133,7 +133,7 @@ nav a:hover {
 }
 
 /* Targets screen that are 800 pixels and larger */
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
 
   /* The nav togel label is no longer displayed */
   .nav-toggle-label {
@@ -203,10 +203,19 @@ nav a:hover {
 }
 
 /* Article Styles */
-article {
-  float: right;
+article{
+    background: rgba(235, 207, 165, 0.575);
+    position: absolute;
+    text-align: center;
+  }
+article h1{
+    color: white;
+    letter-spacing: 1px;
+    font-size: 2em;
 }
-
+  article p{
+      margin: 20px;
+  }
 /* Social Media Icons */
 .fa {
   padding: 10px;
@@ -291,6 +300,7 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+  clear: both;
 }
 
 /* Mobile Styles */
