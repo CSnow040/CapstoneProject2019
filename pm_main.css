@@ -281,7 +281,7 @@ textarea {
 input:focus,
 textarea:focus {
   border-color: orange;
-  box-shadow: 5px
+  box-shadow: 0 0 1px rgba(0, 0, 0, .02), 0 0 8px rgba(0, 0, 0, .5);
 }
 
 /* Footer Styles */
