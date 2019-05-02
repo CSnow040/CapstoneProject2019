@@ -17,14 +17,13 @@ html {
 }
 
 /* Sets a global variable*/
-/* :root {
+:root {
   --westmecOrange: rgba(255, 115, 0, 0.979);
-} */
+}
 
 /* Sets the margin of the body to 0 and the background to a dark gray to black color. The font weight is set to 400 and a font family is used */
 body {
   width: 75%;
-  background-color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 300;
 }
@@ -33,8 +32,8 @@ body {
 /* Uses the westmecOrange variable to set the color of the header, aligns the text in the center, the position is fixed so it will always show on the page, has a z-index set to the highest it can go so it is always on top, and has full width of the page */
 header {
   background: black;
+  position: absolute;
   text-align: center;
-  position: fixed;
   width: 100%
 }
 
