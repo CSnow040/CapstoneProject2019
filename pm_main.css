@@ -12,9 +12,13 @@
 */
 
 /* Mobile Styles */
+html {
+  background-image: url(campus.jpg);
+}
+
 /* Sets a global variable*/
 :root {
-  --westmecOrange: rgba(211, 127, 18, 0.85);
+  --westmecOrange: rgba(255, 115, 0, 0.979);
 }
 
 /* Sets the margin of the body to 0 and the background to a dark gray to black color. The font weight is set to 400 and a font family is used */
