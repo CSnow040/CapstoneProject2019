@@ -13,8 +13,8 @@
 
 /* Mobile Styles */
 html {
-    background-image: url(campus.jpg);
-    background-size: cover;
+  background-image: url(campus.jpg);
+  background-size: cover;
 }
 
 /* Sets a global variable*/
@@ -203,19 +203,23 @@ nav a:hover {
 }
 
 /* Article Styles */
-article{
-    background: rgba(235, 207, 165, 0.575);
-    position: absolute;
-    text-align: center;
-  }
-article h1{
-    color: white;
-    letter-spacing: 1px;
-    font-size: 2em;
+article {
+  background: rgba(235, 207, 165, 0.575);
+  position: absolute;
+  text-align: center;
 }
-  article p{
-      margin: 20px;
-  }
+
+article h1 {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 2em;
+}
+
+article p {
+  margin: 20px;
+
+}
+
 /* Social Media Icons */
 .fa {
   padding: 10px;
@@ -294,6 +298,19 @@ textarea:focus {
   border-color: orange;
   box-shadow: 0 0 1px rgba(0, 0, 0, .02), 0 0 8px rgba(0, 0, 0, .5);
 }
+
+form label {
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+#name,
+#email,
+#address {
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+
 
 /* Footer Styles */
 footer {
