@@ -13,8 +13,8 @@
 
 /* Mobile Styles */
 html {
-    background-image: url(campus.jpg);
-    background-size: cover;
+  background-image: url(campus.jpg);
+  background-size: cover;
 }
 
 /* Sets a global variable*/
@@ -174,7 +174,7 @@ nav a:hover {
   /* The header is displayed in grids, with one column an */
   header {
     display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
 
   /* The logo spans from the 2nd to 3rd colum */
@@ -267,9 +267,18 @@ article h1{
     /* added to make the spacing more visually pleasing */
     padding-top: 15px;
 }
-  article p{
-      margin: 20px;
-  }
+
+article h1 {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 2em;
+}
+
+article p {
+  margin: 20px;
+
+}
+
 /* Social Media Icons */
 .fa {
   padding: 10px;
@@ -313,7 +322,7 @@ article h1{
 /* Form Styles */
 fieldset {
   width: 100%;
-  max-width: 680px;
+  max-width: 800px;
   margin: 100px auto 0;
   padding: 20px;
   box-sizing: border-box;
@@ -348,6 +357,15 @@ textarea:focus {
   box-shadow: 0 0 1px rgba(0, 0, 0, .02), 0 0 8px rgba(0, 0, 0, .5);
 }
 
+}
+  text-transform: capitalize;
+  margin-bottom: 5px;
+form label {
+input#email,
+/* input#name,
+input#address {
+  width: 30%
+} */
 
 /* Mobile Styles */
 /* @media only screen and (max-width: 600px) {

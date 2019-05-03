@@ -12,34 +12,34 @@
 </head>
 
 <body>
-        <header>
-                <img class="logo" src="west-mec.png" />
-                <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="">Home</a>
-                        </li>
-                        <li>
-                            <a href="">News</a>
-                        </li>
-                        <li>
-                            <a href="">About</a>
-                        </li>
-                        <li>
-                            <a href="">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <label for="nav-toggle" class="nav-toggle-label">
-                    <span></span>
-                </label>
-            </header>
+    <header>
+        <img class="logo" src="west-mec.png" />
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Home</a>
+                </li>
+                <li>
+                    <a href="">About</a>
+                </li>
+                <li>
+                    <a href="">CTSO</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
     <form>
         <fieldset>
             <legend>Contact Us</legend>
             <label>Name</label> <input name="name" id="name" type="text" placeholder="First Name Last Name" required>
-            <label>Email</label><input for="email" id="email" type="text" placeholder="Email Address">
+            <label>Email</label><input for="email" id="email" type="text" placeholder="Email Address" required>
             <label>Address</label><input name="address" id="address" type="text" placeholder="Home Address" required>
             <label>What is your Current Grade?</label> <select id="gradeList" required>
                 <option value="Freshmen">Freshmen</option>
@@ -47,10 +47,9 @@
                 <option value="Junior">Junior</option>
                 <option value="Senior">Senior</option>
             </select>
-            <label>Tell us about yourself</label><textarea name="userDesc" id="userDesc" cols="50" rows="10"></textarea>
             <label>Do you have any questions?</label><textarea name="userQuestions" id="userQuestions" cols="50"
                 rows="10"></textarea>
-            <input name="submit" id="submit" type="button">
+            <button id="submit">Submit</button>
         </fieldset>
     </form>
     <script src="" async defer></script>
