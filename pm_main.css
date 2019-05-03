@@ -143,7 +143,7 @@ nav a:hover {
   /* The header is displayed in grids, with one column an */
   header {
     display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
 
   /* The logo spans from the 2nd to 3rd colum */
@@ -264,7 +264,7 @@ article p {
 /* Form Styles */
 fieldset {
   width: 100%;
-  max-width: 680px;
+  max-width: 800px;
   margin: 100px auto 0;
   padding: 20px;
   box-sizing: border-box;
@@ -299,17 +299,17 @@ textarea:focus {
   box-shadow: 0 0 1px rgba(0, 0, 0, .02), 0 0 8px rgba(0, 0, 0, .5);
 }
 
+
 form label {
   margin-bottom: 5px;
   text-transform: capitalize;
 }
 
-#name,
-#email,
-#address {
-  display: grid;
-  grid-template-columns: 1fr 1fr
-}
+/* input#name,
+input#email,
+input#address {
+  width: 30%
+} */
 
 
 /* Footer Styles */
