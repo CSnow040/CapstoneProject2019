@@ -13,8 +13,8 @@
 
 /* Mobile Styles */
 html {
-    background-image: url(campus.jpg);
-    background-size: cover;
+  background-image: url(campus.jpg);
+  background-size: cover;
 }
 
 /* Sets a global variable*/
@@ -143,7 +143,7 @@ nav a:hover {
   /* The header is displayed in grids, with one column an */
   header {
     display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
   }
 
   /* The logo spans from the 2nd to 3rd colum */
@@ -203,19 +203,23 @@ nav a:hover {
 }
 
 /* Article Styles */
-article{
-    background: rgba(235, 207, 165, 0.575);
-    position: absolute;
-    text-align: center;
-  }
-article h1{
-    color: white;
-    letter-spacing: 1px;
-    font-size: 2em;
+article {
+  background: rgba(235, 207, 165, 0.575);
+  position: absolute;
+  text-align: center;
 }
-  article p{
-      margin: 20px;
-  }
+
+article h1 {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 2em;
+}
+
+article p {
+  margin: 20px;
+
+}
+
 /* Social Media Icons */
 .fa {
   padding: 10px;
@@ -260,7 +264,7 @@ article h1{
 /* Form Styles */
 fieldset {
   width: 100%;
-  max-width: 680px;
+  max-width: 800px;
   margin: 100px auto 0;
   padding: 20px;
   box-sizing: border-box;
@@ -294,6 +298,19 @@ textarea:focus {
   border-color: orange;
   box-shadow: 0 0 1px rgba(0, 0, 0, .02), 0 0 8px rgba(0, 0, 0, .5);
 }
+
+
+form label {
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+/* input#name,
+input#email,
+input#address {
+  width: 30%
+} */
+
 
 /* Footer Styles */
 footer {
