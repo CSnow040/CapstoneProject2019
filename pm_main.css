@@ -48,7 +48,7 @@ footer {
   height: 4rem;
   background-color: black;
   padding-bottom: -10px;
-  padding-top: 0px;
+  padding-top: 10px;
 }
 
 #footerText {
@@ -56,10 +56,10 @@ footer {
   overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   text-align: right;
-  font-size: 10pt;
-  margin-top: -10px;
-  padding-right: 20px;
-  width: 95%;
+  font-size: 8pt;
+  padding-left: 15px;
+  display: inline;
+  text-align: center;
 }
 /* Navigation Styles */
 /* Uses the westmecOrange variable to set the color of the header, aligns the text in the center, the position is fixed so it will always show on the page, has a z-index set to the highest it can go so it is always on top, and has full width of the page */
@@ -84,7 +84,7 @@ nav {
   transform: scale(1, 0);
   /* The origin on the transformation will be on the top */
   transform-origin: top;
-  transition: transform 400ms ease-in-out
+  transition: transform 400ms ease-in-out;
 }
 
 nav ul {
@@ -163,103 +163,17 @@ nav a:hover {
   transition: opacity 250ms ease-in-out 250ms
 }
 
-/* Targets screen that are 800 pixels and larger */
-@media screen and (min-width: 900px) {
 
-  /* The nav togel label is no longer displayed */
-  .nav-toggle-label {
-    display: none;
-  }
-
-  /* The header is displayed in grids, with one column an */
-  header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-  }
-
-  /* The logo spans from the 2nd to 3rd colum */
-  .logo {
-    grid-column: 2/ 3;
-  }
-
-  /*  */
-  nav {
-    /* Undid all of the earlier mobile version features added to the nav */
-    all: unset;
-    /* It takes up columns 3-4 */
-    grid-column: 3/4;
-    /* The display is flex so that is moves as the screen is squished */
-    display: flex;
-    /* Pushes the content to the end of the flex, or in this case to the right of the page */
-    justify-content: flex-end;
-    /* Everything in the nav is aligned to the center of the element */
-    align-items: center;
-  }
-
-  /* Shows the links and the animation for when the link is hovered above */
-  nav a {
-    opacity: 1;
-    position: relative
-  }
-
-  /* Displays the ul nested in the nav as flex so that they are organized in a line */
-  nav ul {
-    display: flex;
-  }
-
-  /* Sets the margins of the navigation list items */
-  nav li {
-    margin-left: 3em;
-    margin-bottom: 0;
-  }
-
-  /*Creates the animation for when the nav is hovered above, it creates a bar that will appear above each link and will ease in and out in 250ms */
-  nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background: var(--westmecOrange);
-    position: absolute;
-    top: -.5em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
-  }
-
-  /* Shows the animation when the links are hovered above */
-  nav a:hover::before {
-    transform: scale(1, 1);
-  }
-  #footerText {
-    text-align: center;
-    font-size: 10pt;
-    margin-top: -25px;
-    padding-right: 20px;
-  }
-  footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
-    background-color: black;
-    padding-bottom: 5px;
-    padding-top: 1px;
-  }
-}
 
 
 /* Article Styles */
 article{
     background: rgba(235, 207, 165, 0.575);
     position: relative;
-    /* the adjustments to top and bottom are to work with the relative positioning and keep no gap above them */
-    top: -26px;
-    margin-bottom: -26px;
-    margin-top: -15px;
-    top: -15px;
     text-align: center;
+    padding-bottom: 50px;
   }
+
 article h1{
     color: white;
     letter-spacing: 1px;
@@ -355,4 +269,133 @@ input:focus,
 textarea:focus {
   border-color: orange;
   box-shadow: 0 0 1px rgba(0, 0, 0, .02), 0 0 8px rgba(0, 0, 0, .5);
+}
+
+/* Targets screen that are 800 pixels and larger */
+@media screen and (min-width: 900px) {
+
+  /* The nav togel label is no longer displayed */
+  .nav-toggle-label {
+    display: none;
+  }
+
+  /* The header is displayed in grids, with one column an */
+  header {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+  }
+
+  /* The logo spans from the 2nd to 3rd colum */
+  .logo {
+    grid-column: 2/ 3;
+  }
+
+  /*  */
+  nav {
+    /* Undid all of the earlier mobile version features added to the nav */
+    all: unset;
+    /* It takes up columns 3-4 */
+    grid-column: 3/4;
+    /* The display is flex so that is moves as the screen is squished */
+    display: flex;
+    /* Pushes the content to the end of the flex, or in this case to the right of the page */
+    justify-content: flex-end;
+    /* Everything in the nav is aligned to the center of the element */
+    align-items: center;
+  }
+
+  /* Shows the links and the animation for when the link is hovered above */
+  nav a {
+    opacity: 1;
+    position: relative
+  }
+
+  /* Displays the ul nested in the nav as flex so that they are organized in a line */
+  nav ul {
+    display: flex;
+  }
+
+  /* Sets the margins of the navigation list items */
+  nav li {
+    margin-left: 3em;
+    margin-bottom: 0;
+  }
+
+  /*Creates the animation for when the nav is hovered above, it creates a bar that will appear above each link and will ease in and out in 250ms */
+  nav a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    background: var(--westmecOrange);
+    position: absolute;
+    top: -.5em;
+    left: 0;
+    right: 0;
+    transform: scale(0, 1);
+    transition: transform ease-in-out 250ms;
+  }
+
+  /* Shows the animation when the links are hovered above */
+  nav a:hover::before {
+    transform: scale(1, 1);
+  }
+  #footerText {
+    text-align: center;
+    font-size: 10pt;
+    margin-top: -25px;
+    padding-right: 20px;
+  }
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    background-color: black;
+    padding-top: 0px;
+    clear: both;
+  }
+  article {
+    position: absolute;
+    text-align: center;
+    padding-bottom: 0px;
+  }
+  #bio {
+    position: relative;
+    /* margin-bottom: 0px; */
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    padding: 10px 15px;
+    border-radius: 90px;
+  }
+
+  #alpha {
+    width: auto;
+    height: 100%;    
+    border-radius: 50%;
+    width: 200px;
+    position: relative;
+    display: block;
+    z-index: 99;
+  }
+  .makeCircle {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    left: 90px;
+  }
+  #profileBox {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+  #firstBio {
+    padding-left: 190px;
+  }
+  #secondBio {
+    padding-left: 190px; 
+  }
+  
+
 }
