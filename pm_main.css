@@ -10,6 +10,11 @@
 
     Filename: pm_main.css 
 */
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
 
 /* Mobile Styles */
 html {
@@ -61,6 +66,7 @@ footer {
   padding-right: 20px;
   width: 95%;
 }
+
 /* Navigation Styles */
 /* Uses the westmecOrange variable to set the color of the header, aligns the text in the center, the position is fixed so it will always show on the page, has a z-index set to the highest it can go so it is always on top, and has full width of the page */
 header {
@@ -231,12 +237,14 @@ nav a:hover {
   nav a:hover::before {
     transform: scale(1, 1);
   }
+
   #footerText {
     text-align: center;
     font-size: 10pt;
     margin-top: -25px;
     padding-right: 20px;
   }
+
   footer {
     position: absolute;
     bottom: 0;
@@ -246,26 +254,25 @@ nav a:hover {
     padding-bottom: 5px;
     padding-top: 1px;
   }
+
+  article {
+    position: absolute;
+  }
 }
 
 
 /* Article Styles */
-article{
-    background: rgba(235, 207, 165, 0.575);
-    position: relative;
-    /* the adjustments to top and bottom are to work with the relative positioning and keep no gap above them */
-    top: -26px;
-    margin-bottom: -26px;
-    margin-top: -15px;
-    top: -15px;
-    text-align: center;
-  }
-article h1{
-    color: white;
-    letter-spacing: 1px;
-    font-size: 2em;
-    /* added to make the spacing more visually pleasing */
-    padding-top: 15px;
+article {
+  background: rgba(235, 207, 165, 0.575);
+  position: relative;
+  text-align: center;
+}
+
+article h1 {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 2em;
+  /* added to make the spacing more visually pleasing */
 }
 
 article h1 {
@@ -336,7 +343,11 @@ legend {
   font-size: 2em;
 }
 
-input {
+input {}
+
+.inner-form,
+.middle-form,
+.bottom-form {
   width: 100%;
   margin: 25px 0;
 }
@@ -355,4 +366,10 @@ input:focus,
 textarea:focus {
   border-color: orange;
   box-shadow: 0 0 1px rgba(0, 0, 0, .02), 0 0 8px rgba(0, 0, 0, .5);
+}
+
+#name,
+#address,
+#email {
+  width: 29.9%;
 }
