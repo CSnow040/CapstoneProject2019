@@ -12,8 +12,11 @@
 */
 
 /* Mobile Styles */
+/* The background image stays the same size and covers the whole page, preventing it from repeating for mobile styles or screens with too small of widths */
 html {
   background-image: url(campus.jpg);
+  background-position: center;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -276,6 +279,7 @@ legend {
   text-align: center;
   letter-spacing: 1px;
   font-size: 2em;
+
 }
 
 input {
@@ -300,16 +304,17 @@ textarea:focus {
 }
 
 
-form label {
+ label {
   margin-bottom: 5px;
   text-transform: capitalize;
 }
 
-/* input#name,
+input#name,
 input#email,
 input#address {
-  width: 30%
-} */
+  width: 26%;
+float: left;
+}
 
 
 /* Footer Styles */
