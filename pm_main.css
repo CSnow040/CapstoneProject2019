@@ -254,8 +254,7 @@ article p {
 /* Form Styles */
 fieldset {
   width: 100%;
-  max-width: 800px;
-  margin: 100px auto 0;
+  margin: 50px auto;
   padding: 20px;
   box-sizing: border-box;
   background: white;
@@ -265,15 +264,14 @@ fieldset {
 legend {
   text-align: center;
   letter-spacing: 1px;
-  font-size: 2em;
-
+  font-size: 5vh;
 }
 
 label {
   display: block;
+margin-bottom: 10px;
 }
 
-input {}
 
 .inner-form,
 .middle-form,
@@ -282,7 +280,9 @@ input {}
   margin: 25px 0;
 }
 
-
+.middle-form{
+  clear: both;
+}
 input[type="text"],
 textarea {
   padding: 15px 5px;
@@ -299,9 +299,18 @@ textarea:focus {
   box-shadow: 0 0 1px rgba(0, 0, 0, .02), 0 0 8px rgba(0, 0, 0, .5);
 }
 
-.top-form .inner-form {
-  width: 29%;
-  float: left;
+button#submit{
+margin: auto;
+  width:20%;
+  height:50px;
+  font-size: 3vh;
+  letter-spacing: 1px;
+  text-align: center;
+  background: var(--westmecOrange)
+}
+
+.top-form .inner-form:last-child{
+  margin-right: 0;
 }
 
 /* Targets screen that are 800 pixels and larger */
@@ -396,7 +405,6 @@ textarea:focus {
     padding-top: 5px;
     padding-bottom: 5px;
     top: 100vh;
-    /*  */
     margin-top: -50vh;
   }
 
@@ -450,5 +458,22 @@ textarea:focus {
   }
   #chrisName {
     color: black;
+  }
+
+  /* Form Styles */
+  fieldset {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background: white;
+    border-radius: 20px;
+  }
+  
+  .top-form .inner-form {
+    width: 29%;
+    float: left;
+    margin-right: 5%;
   }
 }
