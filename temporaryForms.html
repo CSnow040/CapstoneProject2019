@@ -41,17 +41,25 @@
     <form>
         <fieldset>
             <legend>Contact Us</legend>
-            <div><label>Name</label></div> <input name="name" id="name" type="text" placeholder="First Name Last Name" required>
-            <div><label>Email</label></div><input for="email" id="email" type="text" placeholder="Email Address" required>
-            <div><label>Address</label></div><input name="address" id="address" type="text" placeholder="Home Address" required>
-            <label>What is your Current Grade?</label> <select id="gradeList" required>
-                <option value="Freshmen">Freshmen</option>
-                <option value="Sophomore">Sophomore</option>
-                <option value="Junior">Junior</option>
-                <option value="Senior">Senior</option>
-            </select>
-            <label>Do you have any questions?</label><textarea name="userQuestions" id="userQuestions" cols="50"
-                rows="10"></textarea>
+            <div class="top-form">
+                <div class="inner-form"><label>Name</label> <input name=" name" id="name" type="text"
+                        placeholder="First Name Last Name" required></div>
+                <div class="inner-form"><label>Email</label><input for="email" id="email" type="text"
+                        placeholder="Email Address" required></div>
+                <div class="inner-form"><label>Address</label><input name="address" id="address" type="text"
+                        placeholder="Home Address" required></div>
+            </div>
+            <div class="middle-form"><label>What is your Current Grade?</label> <select id="gradeList" required>
+                    <option value="Freshmen">Freshmen</option>
+                    <option value="Sophomore">Sophomore</option>
+                    <option value="Junior">Junior</option>
+                    <option value="Senior">Senior</option>
+                </select>
+            </div>
+            <div class="bottom-form">
+                <label>Do you have any questions?</label><textarea name="userQuestions" id="userQuestions" cols="50"
+                    rows="10"></textarea>
+            </div>
             <button id="submit">Submit</button>
         </fieldset>
     </form>
