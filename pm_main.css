@@ -20,7 +20,7 @@ html {
 
 /* Sets a global variable*/
 :root {
-  --westmecOrange: rgba(177, 147, 122, 0.979);
+  --westmecOrange: rgba(255, 115, 0, 0.979);
 }
 
 /* Sets the margin of the body to 0 and the background to a dark gray to black color. The font weight is set to 400 and a font family is used */
@@ -362,6 +362,8 @@ textarea:focus {
     padding-top: 5px;
     padding-bottom: 5px;
     top: 100vh;
+    /*  */
+    margin-top: -50vh;
   }
   article {
     position: absolute;
@@ -392,7 +394,7 @@ textarea:focus {
     position: relative;
     overflow: hidden;
     float: left;
-    left: 90px;
+    left: 12%;
   }
   #profileBox {
     position: relative;
@@ -406,6 +408,7 @@ textarea:focus {
   #secondBio {
     padding-left: 190px;
   }
-  
-
+  #chrisName {
+    color: black;
+  }
 }
