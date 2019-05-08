@@ -457,6 +457,15 @@ button#submit {
     padding: 10px 15px;
     border-radius: 90px;
   }
+  #bio2 {
+    position: relative;
+    /* margin-bottom: 0px; */
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    padding: 10px 15px;
+    border-radius: 90px;
+  }
 
   #alpha {
     width: auto;
@@ -468,6 +477,9 @@ button#submit {
     z-index: 99;
     left: -7vh;
     top: -8vh;
+  }
+  #bannerLogo {
+    position: relative;
   }
 
   #chrisName {
@@ -491,11 +503,13 @@ button#submit {
   }
 
   #firstBio {
-    padding-left: 150px;
+    /* padding-left: 150px; */
+    padding: 0vh 20vh;
   }
 
   #secondBio {
-    padding-left: 100px;
+    /* padding-left: 100px; */
+    padding: 0vh 20vh;
   }
   #thirdBio {
     text-align: center;
@@ -529,20 +543,35 @@ button#submit {
   }
   #bio h2 {
     padding-top: 20px;
-    font-size: 2.5vh;
+    font-size: 3vh;
   }
-  #bio h2:first-of-type {
-    margin-left: 
+  #degreeHeader {
+    position: relative;
+    left: 30vh;
   }
   .sectionDegree {
     /* margin-left: -30vh; */
     padding-top: 2px;
+    padding-left: 80vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+  #firstDegree {
+    position: relative;
+    top: -15vh;
+    left: -10vh;
+  }
+  #secondDegree {
+    position: relative;
+    top: -2vh;
+    left: -10vh;
+  }
   .bioText {
-    font-size: 2.5vh;
+    font-size: 3vh;
     text-align: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+  .bioText:first-of-type {
+    text-align: center;
   }
   #description {
     position: relative;
@@ -552,5 +581,19 @@ button#submit {
   }
   .description {
     margin: 5px 20vh;
+  }
+  #firstImage {
+    height: 15vh;
+    width: 15vh;
+    position: relative;
+    left: 12vh;
+    top: -3vh;
+  }
+  #secondImage {
+    height: 15vh;
+    width: 30vh;
+    position: relative;
+    top: 12vh;
+    left: -10vh;
   }
 }
