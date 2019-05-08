@@ -251,6 +251,26 @@ article p {
   background-image: linear-gradient(-60deg, #6ecadc, #e9a820, #e01563, #3eb991);
 }
 
+/* Shop Styles */
+div.shop {
+  display: grid;
+  grid-template-columns: repeat(1fr, 300px);
+  justify-content: center
+}
+
+img.shopItem {
+  width: 400px;
+  height: 500px;
+
+}
+
+#keychain,
+#vicehandle,
+#pens {
+  margin-bottom: 20px;
+  background: white;
+}
+
 /* Form Styles */
 fieldset {
   width: 100%;
@@ -258,18 +278,17 @@ fieldset {
   padding: 20px;
   box-sizing: border-box;
   background: white;
-  border-radius: 20px;
 }
 
 legend {
   text-align: center;
   letter-spacing: 1px;
-  font-size: 5vh;
+  font-size: 4em;
 }
 
 label {
   display: block;
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 
@@ -280,15 +299,16 @@ margin-bottom: 10px;
   margin: 25px 0;
 }
 
-.middle-form{
+.middle-form {
   clear: both;
 }
+
 input[type="text"],
 textarea {
   padding: 15px 5px;
   box-sizing: border-box;
   width: 100%;
-  border: 2px solid lightblue;
+  border: 2px solid black;
   outline: none;
   transition: all 200ms ease;
 }
@@ -299,17 +319,16 @@ textarea:focus {
   box-shadow: 0 0 1px rgba(0, 0, 0, .02), 0 0 8px rgba(0, 0, 0, .5);
 }
 
-button#submit{
-margin: auto;
-  width:20%;
-  height:50px;
+button#submit {
+  margin: auto;
+  width: 20%;
+  height: 50px;
   font-size: 3vh;
   letter-spacing: 1px;
-  text-align: center;
-  background: var(--westmecOrange)
+  background: var(--westmecOrange);
 }
 
-.top-form .inner-form:last-child{
+.top-form .inner-form:last-child {
   margin-right: 0;
 }
 
@@ -381,15 +400,25 @@ margin: auto;
   nav a:hover::before {
     transform: scale(1, 1);
   }
+
+  /* Shop Styles */
+  div.shop {
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
+    justify-content: center
+  }
+
+  /* Footer Styles */
   #page-container {
     position: relative;
     min-height: 100vh;
   }
-  
+
   #content-wrap {
     /* rem is a unit relative to the parent and it works out for the content of the page */
     padding-bottom: 2.5rem;
   }
+
   #footerText {
     text-align: center;
     font-size: 10pt;
@@ -456,6 +485,7 @@ margin: auto;
   #secondBio {
     padding-left: 190px;
   }
+
   #chrisName {
     color: black;
   }
@@ -470,7 +500,7 @@ margin: auto;
     background: white;
     border-radius: 20px;
   }
-  
+
   .top-form .inner-form {
     width: 29%;
     float: left;
