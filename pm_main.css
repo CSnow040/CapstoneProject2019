@@ -128,7 +128,7 @@ nav a:hover {
 
 /* The nav element that is a sibiling of the nav-toggle class is being displayed*/
 .nav-toggle:checked~nav {
-  transform: scale(1, 1)
+  transform: scale(1, 1);
 }
 
 .nav-toggle {
