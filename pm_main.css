@@ -423,6 +423,7 @@ button#submit {
     /* rem is a unit relative to the parent and it works out for the content of the page */
     padding-bottom: 2.5rem;
   }
+
   .footerText {
     text-align: center;
     font-size: 2vh;
@@ -511,10 +512,12 @@ button#submit {
     /* padding-left: 100px; */
     padding: 0vh 20vh;
   }
+
   #thirdBio {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+
   #chrisName {
     color: black;
     text-align: center;
@@ -537,10 +540,12 @@ button#submit {
     float: left;
     margin-right: 5%;
   }
+
   #map {
     display: block;
     background-color: white;
   }
+
   #bio h2 {
     padding-top: 20px;
     font-size: 3vh;
@@ -549,6 +554,7 @@ button#submit {
     position: relative;
     left: 30vh;
   }
+
   .sectionDegree {
     /* margin-left: -30vh; */
     padding-top: 2px;
@@ -579,6 +585,7 @@ button#submit {
     color: white;
     padding: 10px 10px;
   }
+
   .description {
     margin: 5px 20vh;
   }
