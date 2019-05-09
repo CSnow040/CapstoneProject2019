@@ -215,27 +215,11 @@ article p {
 
 }
 
-article#CTSO {
-  width: 100%;
-  text-align: left;
-}
-
-
-article#CTSO h1 {
-  text-align: center;
+#CTSO h1 {
   color: black;
+  margin-bottom: 10px;
 }
 
-article#CTSO h2 {
-  font-size: 1.5em;
-  text-decoration: underline;
-
-}
-
-article#CTSO h2,
-h4 {
-  margin: 10px;
-}
 
 /* Social Media Icons */
 .fa {
@@ -474,7 +458,6 @@ button#submit {
 
   #bio {
     position: relative;
-    /* margin-bottom: 0px; */
     background-color: white;
     color: black;
     font-family: sans-serif;
@@ -482,15 +465,6 @@ button#submit {
     border-radius: 90px;
   }
 
-  #bio2 {
-    position: relative;
-    /* margin-bottom: 0px; */
-    background-color: white;
-    color: black;
-    font-family: sans-serif;
-    padding: 10px 15px;
-    border-radius: 90px;
-  }
 
   #alpha {
     width: auto;
@@ -550,6 +524,42 @@ button#submit {
     font-size: 2.8em;
   }
 
+  /* CTSO Section */
+
+  article#CTSO {
+    margin: auto;
+    width: 80%;
+    text-align: left;
+    position: relative;
+    background-color: white;
+    color: black;
+    font-family: sans-serif;
+    padding: 10px 15px;
+    border-radius: 90px;
+    padding-bottom: 50px;
+  }
+
+
+  article#CTSO h1 {
+    text-align: center;
+    color: black;
+  }
+
+  article#CTSO h2 {
+    font-size: 1.5em;
+    text-decoration: underline;
+
+  }
+
+  article#CTSO h2,
+  h4 {
+    margin: 10px;
+    display: inline-block;
+
+  }
+
+
+
   /* Form Styles */
   fieldset {
     width: 100%;
@@ -574,6 +584,7 @@ button#submit {
     width: 70%;
     height: 500px;
   }
+
   #mapDiv {
     position: relative;
     width: 90%;
@@ -582,6 +593,7 @@ button#submit {
     text-align: center;
     display: inline-block;
   }
+
   #adjustMap {
     width: 800px;
     text-align: center;
@@ -626,6 +638,7 @@ button#submit {
   .bioText:first-of-type {
     text-align: center;
   }
+
   /* this is the span element holding the description of the course */
   #description {
     position: relative;
