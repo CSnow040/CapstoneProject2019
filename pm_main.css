@@ -219,18 +219,22 @@ article p {
   margin-bottom: 20px;
 
 }
-#CTSO h2{
+
+#CTSO h2 {
   font-size: 1.4em;
 }
-#CTSO ul li{
+
+#CTSO ul li {
   margin: 5px 0;
+  list-style: none;
 }
 
-#CTSO h3{
+#CTSO h3 {
   margin-bottom: 10px;
   font-size: 1.2em;
 }
-#CTSO h4{
+
+#CTSO h4 {
   margin-bottom: 10px;
 }
 
@@ -345,7 +349,7 @@ textarea:focus {
 }
 
 button#submit {
-padding: 2px;
+  padding: 2px;
   width: 200px;
   /* height: 50px; */
   font-size: 3em;
@@ -569,7 +573,7 @@ padding: 2px;
 
   }
 
-  #CTSO ul li{
+  #CTSO ul li {
     margin-left: 10px;
   }
 
@@ -685,13 +689,16 @@ padding: 2px;
     top: 90px;
     left: -60px;
   }
+
   #media {
     margin-top: -12px;
   }
+
   #links {
     color: white;
     text-align: center;
   }
+
   #links a {
     color: white;
     text-decoration: none;
@@ -700,7 +707,8 @@ padding: 2px;
     text-align: center;
     overflow: none;
   }
-  #links a:hover { 
+
+  #links a:hover {
     color: var(--westmecOrange);
     text-decoration: underline;
   }
