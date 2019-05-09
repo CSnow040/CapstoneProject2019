@@ -463,6 +463,7 @@ button#submit {
     font-family: sans-serif;
     padding: 10px 15px;
     border-radius: 90px;
+    box-shadow: 5px 10px orange;
   }
 
 
@@ -476,6 +477,7 @@ button#submit {
     z-index: 99;
     left: -7vh;
     top: -8vh;
+    box-shadow: 5px 5px grey;
   }
 
   #bannerLogo {
@@ -500,6 +502,7 @@ button#submit {
     width: 80%;
     margin: 0 auto;
     margin-top: 50px;
+
   }
 
   #firstBio {
@@ -581,6 +584,7 @@ button#submit {
     position: relative;
     background-color: var(--westmecOrange);
     margin-top: 40px;
+    margin-bottom: 40px;
     width: 70%;
     height: 500px;
   }
@@ -669,5 +673,24 @@ button#submit {
     position: relative;
     top: 90px;
     left: -60px;
+  }
+  #media {
+    margin-top: -12px;
+  }
+  #links {
+    color: white;
+    text-align: center;
+  }
+  #links a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 18px;
+    text-align: center;
+    overflow: none;
+  }
+  #links a:hover { 
+    color: var(--westmecOrange);
+    text-decoration: underline;
   }
 }
