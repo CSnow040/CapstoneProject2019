@@ -214,6 +214,28 @@ article p {
 
 }
 
+article#CTSO {
+  width: 100%;
+  text-align: left;
+}
+
+
+article#CTSO h1 {
+  text-align: center;
+  color: black;
+}
+
+article#CTSO h2 {
+  font-size: 1.5em;
+  text-decoration: underline;
+
+}
+
+article#CTSO h2,
+h4 {
+  margin: 10px;
+}
+
 /* Social Media Icons */
 .fa {
   padding: 10px;
@@ -458,6 +480,7 @@ button#submit {
     padding: 10px 15px;
     border-radius: 90px;
   }
+
   #bio2 {
     position: relative;
     /* margin-bottom: 0px; */
@@ -479,6 +502,7 @@ button#submit {
     left: -7vh;
     top: -8vh;
   }
+
   #bannerLogo {
     position: relative;
   }
@@ -550,6 +574,7 @@ button#submit {
     padding-top: 20px;
     font-size: 3vh;
   }
+
   #degreeHeader {
     position: relative;
     left: 30vh;
@@ -561,24 +586,29 @@ button#submit {
     padding-left: 80vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+
   #firstDegree {
     position: relative;
     top: -15vh;
     left: -10vh;
   }
+
   #secondDegree {
     position: relative;
     top: -2vh;
     left: -10vh;
   }
+
   .bioText {
     font-size: 3vh;
     text-align: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
+
   .bioText:first-of-type {
     text-align: center;
   }
+
   #description {
     position: relative;
     background-color: black;
@@ -589,6 +619,7 @@ button#submit {
   .description {
     margin: 5px 20vh;
   }
+
   #firstImage {
     height: 15vh;
     width: 15vh;
@@ -596,6 +627,7 @@ button#submit {
     left: 12vh;
     top: -3vh;
   }
+
   #secondImage {
     height: 15vh;
     width: 30vh;
