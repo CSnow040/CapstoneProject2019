@@ -751,8 +751,8 @@ footer {
     text-align: center;
     overflow: none;
   }
-
-  #links a:hover {
+  
+  #links a:hover { 
     color: var(--westmecOrange);
     text-decoration: underline;
   }
