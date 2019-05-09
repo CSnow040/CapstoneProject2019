@@ -14,6 +14,7 @@
   margin: 0;
   padding: 0;
   user-select: none;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 }
 
 /* Mobile Styles */
@@ -56,8 +57,8 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 2.5rem;
-  background-color: rgb(56, 56, 56);
+  height: 45px;
+  background-color: black;
   padding-bottom: 10px;
   padding-top: 10px;
 }
@@ -66,7 +67,7 @@ footer {
   color: white;
   overflow: hidden;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 1.2vh;
+  font-size: 1.2em;
   padding-left: 0px;
   display: inline-block;
   text-align: center;
@@ -239,7 +240,7 @@ h4 {
 /* Social Media Icons */
 .fa {
   padding: 10px;
-  font-size: 40px;
+  font-size: 3em;
   width: 20px;
   text-align: center;
   text-decoration: none;
@@ -349,7 +350,7 @@ button#submit {
   margin: auto;
   width: 20%;
   height: 50px;
-  font-size: 3vh;
+  font-size: 3em;
   letter-spacing: 1px;
   text-align: center;
   background: var(--westmecOrange);
@@ -448,7 +449,7 @@ button#submit {
 
   .footerText {
     text-align: center;
-    font-size: 2vh;
+    font-size: 2em;
     margin-top: -30px;
     padding-right: 20px;
   }
@@ -460,7 +461,7 @@ button#submit {
     background-color: black;
     padding-top: 6px;
     padding-bottom: 6px;
-    top: 100vh;
+    top: 50vh;
     margin-top: -50vh;
     padding-left: 0px;
   }
@@ -529,23 +530,24 @@ button#submit {
 
   #firstBio {
     /* padding-left: 150px; */
-    padding: 0vh 20vh;
+    padding: 0vh 90px;
   }
 
   #secondBio {
     /* padding-left: 100px; */
-    padding: 0vh 20vh;
+    padding: 0vh 90px;
   }
 
   #thirdBio {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0vh 90px;
   }
 
   #chrisName {
     color: black;
     text-align: center;
-    font-size: 6.5vh;
+    font-size: 2.8em;
   }
 
   /* Form Styles */
@@ -566,41 +568,57 @@ button#submit {
   }
 
   #map {
-    display: block;
-    background-color: white;
+    position: relative;
+    background-color: var(--westmecOrange);
+    margin-top: 40px;
+    width: 70%;
+    height: 500px;
+  }
+  #mapDiv {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    position: fixed;
+    text-align: center;
+    display: inline-block;
+  }
+  #adjustMap {
+    width: 800px;
+    text-align: center;
   }
 
   #bio h2 {
     padding-top: 20px;
-    font-size: 3vh;
+    font-size: 1.6em;
+    color: orange;
   }
 
   #degreeHeader {
     position: relative;
-    left: 30vh;
+    left: 170px;
   }
 
   .sectionDegree {
     /* margin-left: -30vh; */
     padding-top: 2px;
-    padding-left: 80vh;
+    padding-left: 500px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
 
   #firstDegree {
     position: relative;
-    top: -15vh;
+    top: -100px;
     left: -10vh;
   }
 
   #secondDegree {
     position: relative;
-    top: -2vh;
-    left: -10vh;
+    top: -30px;
+    left: -65px;
   }
 
   .bioText {
-    font-size: 3vh;
+    font-size: 1.4em;
     text-align: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
@@ -608,31 +626,35 @@ button#submit {
   .bioText:first-of-type {
     text-align: center;
   }
-
+  /* this is the span element holding the description of the course */
   #description {
     position: relative;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.846);
     color: white;
     padding: 10px 10px;
+    height: 220px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 40px;
+    margin-top: 40px;
   }
 
   .description {
-    margin: 5px 20vh;
+    margin: 40px 100px;
   }
 
   #firstImage {
-    height: 15vh;
-    width: 15vh;
+    height: 100px;
+    width: 100px;
     position: relative;
-    left: 12vh;
-    top: -3vh;
+    left: 80px;
+    top: -15px;
   }
 
   #secondImage {
-    height: 15vh;
-    width: 30vh;
+    height: 100px;
+    width: 200px;
     position: relative;
-    top: 12vh;
-    left: -10vh;
+    top: 90px;
+    left: -60px;
   }
 }
