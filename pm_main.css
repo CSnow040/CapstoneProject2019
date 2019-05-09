@@ -45,7 +45,7 @@ body {
 /* page container to keep the body away from footer they are relative so it can be moved above the footer at all times*/
 #page-container {
   position: relative;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 #content-wrap {
@@ -54,12 +54,12 @@ body {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   height: 45px;
   background-color: black;
-  padding-bottom: 10px;
+  padding-bottom: 15px;
   padding-top: 10px;
 }
 
@@ -212,11 +212,25 @@ article h1 {
 
 article p {
   margin: 20px;
-
 }
 
 #CTSO h1 {
   color: black;
+  margin-bottom: 20px;
+
+}
+#CTSO h2{
+  font-size: 1.4em;
+}
+#CTSO ul li{
+  margin: 5px 0;
+}
+
+#CTSO h3{
+  margin-bottom: 10px;
+  font-size: 1.2em;
+}
+#CTSO h4{
   margin-bottom: 10px;
 }
 
@@ -331,12 +345,11 @@ textarea:focus {
 }
 
 button#submit {
-  margin: auto;
-  width: 20%;
-  height: 50px;
+padding: 2px;
+  width: 200px;
+  /* height: 50px; */
   font-size: 3em;
   letter-spacing: 1px;
-  text-align: center;
   background: var(--westmecOrange);
 }
 
@@ -423,7 +436,7 @@ button#submit {
   /* Footer Styles */
   #page-container {
     position: relative;
-    min-height: 100vh;
+    min-height: 100%
   }
 
   #content-wrap {
@@ -445,9 +458,6 @@ button#submit {
     background-color: black;
     padding-top: 6px;
     padding-bottom: 6px;
-    top: 50vh;
-    margin-top: -50vh;
-    padding-left: 0px;
   }
 
   article {
@@ -507,18 +517,18 @@ button#submit {
 
   #firstBio {
     /* padding-left: 150px; */
-    padding: 0vh 90px;
+    padding: 0 90px;
   }
 
   #secondBio {
     /* padding-left: 100px; */
-    padding: 0vh 90px;
+    padding: 0 90px;
   }
 
   #thirdBio {
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 0vh 90px;
+    padding: 0 90px;
   }
 
   #chrisName {
@@ -550,8 +560,6 @@ button#submit {
 
   article#CTSO h2 {
     font-size: 1.5em;
-    text-decoration: underline;
-
   }
 
   article#CTSO h2,
@@ -561,6 +569,9 @@ button#submit {
 
   }
 
+  #CTSO ul li{
+    margin-left: 10px;
+  }
 
 
   /* Form Styles */
