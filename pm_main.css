@@ -360,6 +360,50 @@ button#submit {
 .top-form .inner-form:last-child {
   margin-right: 0;
 }
+.footerText {
+  text-align: center;
+  font-size: 2em;
+  margin-top: -30px;
+  padding-right: 20px;
+}
+footer {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  background-color: black;
+  padding-top: 0px;
+  padding-bottom: 60px;
+}
+#links {
+  color: white;
+  text-align: center;
+}
+
+#links a {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  top: 25px;
+  text-align: center;
+  overflow: none;
+}
+
+#links a:hover {
+  color: var(--westmecOrange);
+  text-decoration: underline;
+}
+#mediaContainer {
+  text-align: center;
+  padding-left: 40px;
+}
+#media {
+  display: inline-block;
+}
+.fa {
+  position: relative;
+  top: 30px;
+}
+
 
 /* Targets screen that are 800 pixels and larger */
 @media screen and (min-width: 900px) {
@@ -460,8 +504,8 @@ button#submit {
     width: 100%;
     min-height: auto;
     background-color: black;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 20px;
+    padding-bottom: 10px;
   }
 
   article {
@@ -703,7 +747,7 @@ button#submit {
     color: white;
     text-decoration: none;
     position: relative;
-    top: 18px;
+    top: -10px;
     text-align: center;
     overflow: none;
   }
@@ -711,5 +755,16 @@ button#submit {
   #links a:hover {
     color: var(--westmecOrange);
     text-decoration: underline;
+  }
+  .fa {
+    padding: 10px;
+    font-size: 3em;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 1px;
+    border-radius: 50%;
+    float: left;
+    top: 4px;
   }
 }
