@@ -9,46 +9,30 @@
     Filename: pm_script.js
 */
 
-// //photo carousel
-// const carouselSlide = document.querySelectorAll('.carousel-slide');
-// const carouselImages = document.querySelectorAll('.carousel-slide img');
+//Photo Carousel
+// Starting point
+var i = 0;
+var images = [];
+var time = 3000;
 
-// //buttons to navigate carousel
-// const prevButton = document.querySelectorAll('#prevButton');
-// const nextButton = document.querySelectorAll('#nextButton');
+//Image list
+images[0] = 'work.jpg';
+images[1] = 'class.jpg';
+images[2] = 'precision.jpg';
 
-// //counter monitors which picture you are on
-// let counter = 1;
-// const size = carouselImages[0].clientWidth;
+//Change image
+function changeImg() {
+    document.slide.src = images[i];
 
-// carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    if (i < images.length - 1) {
+        i++;
+    } else {
+        i = 0;
+    }
 
-// //button listeners
-// nextButton.addEventListener('click', () => {
-//     if (counter <= 0) return;
-//     carouselSlide.style.transition = "transform 0.4s ease-in-out";
-//     counter++;
-//     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-// });
+    setTimeout("changeImg()", time);
+}
 
-// prevButton.addEventListener('click', () => {
-//     carouselSlide.style.transition = "transform 0.4s ease-in-out";
-//     counter--;
-//     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-// });
+window.onload = changeImg;
 
-// carouselSlide.addEventListener('transitionend', () => {
-//     console.log(carouselImages[counter]);
-//     if (carouselImages[counter].id === 'lastClone') {
-//         carouselSlide.style.transition = "none";
-//         counter = carouselImages.length - 2;
-//         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-//     }
-//     if (carouselImages[counter].id === 'firstClone') {
-//         carouselSlide.style.transition = "none";
-//         counter = carouselImages.length - counter;
-//         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-//     }
-// });
-
-//footer
+//Footer
