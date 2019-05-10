@@ -496,8 +496,8 @@ footer {
   /* Photo Carousel Styles */
 
   img#slideshow {
-    width: 1000px;
-    margin-left: 225px;
+    width: 100%;
+    margin-bottom: 0;
   }
 
   /* Shop Styles */
@@ -738,6 +738,7 @@ footer {
     height: 220px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-bottom: 40px;
+    margin-top: -2px;
   }
 
   .description {
