@@ -8,8 +8,6 @@
 
     Filename: pm_script.js
 */
-
-
 //Photo Carousel
 // Starting point
 var i = 0;

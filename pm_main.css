@@ -31,7 +31,7 @@ html {
 #map {
   position: relative;
   margin-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: -2px;
   width: 100vw;
   height: 500px;
 }
@@ -49,7 +49,6 @@ html {
 
 /* Sets the margin of the body to 0 and the background to a dark gray to black color. The font weight is set to 400 and a font family is used */
 body {
-  /* width: 75%; */
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-weight: 300;
   margin: auto;
@@ -58,7 +57,7 @@ body {
 /* page container to keep the body away from footer they are relative so it can be moved above the footer at all times*/
 #page-container {
   position: relative;
-  min-height: 100%;
+  height: 100%;
 }
 
 #content-wrap {
@@ -88,7 +87,24 @@ footer {
   padding-left: 10px;
 }
 
+#description {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.846);
+  color: white;
+  padding: 10px 10px;
+  height: 220px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 40px;
+  margin-top: -2px;
+}
 
+#chrisName{
+  margin-bottom: 10px;
+}
+
+#bio h2{
+  font-size: 1.4em;
+}
 /* Navigation Styles */
 /* Uses the westmecOrange variable to set the color of the header, aligns the text in the center, the position is fixed so it will always show on the page, has a z-index set to the highest it can go so it is always on top, and has full width of the page */
 header {
@@ -423,6 +439,15 @@ footer {
   top: 30px;
 }
 
+img#slideshow {
+  width: 100%;
+
+}
+
+div.arrow{
+  display: none;
+}
+
 
 /* Targets screen that are 800 pixels and larger */
 @media screen and (min-width: 900px) {
@@ -495,10 +520,7 @@ footer {
 
   /* Photo Carousel Styles */
 
-  img#slideshow {
-    width: 100%;
-    margin-bottom: 0;
-  }
+
 
   /* Shop Styles */
   div.shop {
@@ -528,7 +550,7 @@ footer {
   footer {
     position: relative;
     width: 100%;
-    min-height: auto;
+    height: auto;
     background-color: black;
     padding-top: 20px;
     padding-bottom: 10px;
@@ -537,8 +559,9 @@ footer {
   article {
     position: absolute;
     text-align: center;
-    padding-bottom: 0px;
   }
+ 
+
 
   #bio,
   #CTSO,
@@ -549,7 +572,7 @@ footer {
     font-family: sans-serif;
     padding: 10px 15px;
     border-radius: 90px;
-    box-shadow: 5px 10px orange;
+    box-shadow: 5px 10px rgba(0, 0, 0, .5);
   }
 
 
@@ -567,12 +590,6 @@ footer {
 
   #bannerLogo {
     position: relative;
-  }
-
-  #chrisName {
-    margin: 0px 0px;
-    margin-top: -150px;
-    font-size: 3vh;
   }
 
   .makeCircle {
@@ -608,6 +625,8 @@ footer {
   }
 
   #chrisName {
+    margin: 0px 0px;
+    margin-top: -150px;
     color: black;
     text-align: center;
     font-size: 3vw;
@@ -616,7 +635,7 @@ footer {
   /* CTSO Section */
 
   article#CTSO {
-    margin: auto;
+    margin: 50px auto;;
     width: 80%;
     text-align: left;
     position: relative;
@@ -730,16 +749,7 @@ footer {
   }
 
   /* this is the span element holding the description of the course */
-  #description {
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.846);
-    color: white;
-    padding: 10px 10px;
-    height: 220px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-bottom: 40px;
-    margin-top: -2px;
-  }
+
 
   .description {
     margin: 40px 100px;
@@ -794,5 +804,29 @@ footer {
     border-radius: 50%;
     float: left;
     top: 4px;
+  }
+
+  /* Slideshow Styles */
+  img#slideshow {
+    width: 80%;
+    margin-bottom: 0;
+    margin-left:10%;
+    margin-right: 10%;
+  }
+  div.arrow{
+    display: block;
+    align-items: center;
+    position: relative
+  }
+  #arrow-back{
+    transform: scaleX(-1);
+  }
+  .arrow-toggle-label {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
   }
 }
