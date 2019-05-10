@@ -28,6 +28,19 @@ html {
   background-position: center
 }
 
+#map {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100vw;
+  height: 500px;
+}
+
+#adjustMap {
+  /* width: 800px; */
+  text-align: center;
+}
+
 
 /* Sets a global variable*/
 :root {
@@ -514,7 +527,9 @@ footer {
     padding-bottom: 0px;
   }
 
-  #bio {
+  #bio,
+  #CTSO,
+  fieldset {
     position: relative;
     background-color: white;
     color: black;
@@ -641,10 +656,9 @@ footer {
 
   #map {
     position: relative;
-    background-color: var(--westmecOrange);
     margin-top: 40px;
     margin-bottom: 40px;
-    width: 70%;
+    width: 70vw;
     height: 500px;
   }
 
