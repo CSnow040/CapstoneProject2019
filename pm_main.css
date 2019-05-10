@@ -487,6 +487,13 @@ footer {
     transform: scale(1, 1);
   }
 
+  /* Photo Carousel Styles */
+
+  img#slideshow {
+    width: 1000px;
+    margin-left: 225px;
+  }
+
   /* Shop Styles */
   div.shop {
     display: grid;
