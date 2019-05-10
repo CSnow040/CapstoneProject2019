@@ -1,0 +1,23 @@
+footer {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    top: 100vh;
+    margin-top: -600px;
+}
+#CTSO {
+    top: 40px;
+}
+#officers {
+    left: -40px;
+    top: -20px;
+}
+.fa {
+    display: inline-block;
+}
+#media {
+    text-align: center;
+}
