@@ -373,12 +373,14 @@ button#submit {
 .top-form .inner-form:last-child {
   margin-right: 0;
 }
+
 .footerText {
   text-align: center;
   font-size: 2em;
   margin-top: -30px;
   padding-right: 20px;
 }
+
 footer {
   position: relative;
   width: 100%;
@@ -387,6 +389,7 @@ footer {
   padding-top: 0px;
   padding-bottom: 60px;
 }
+
 #links {
   color: white;
   text-align: center;
@@ -405,13 +408,16 @@ footer {
   color: var(--westmecOrange);
   text-decoration: underline;
 }
+
 #mediaContainer {
   text-align: center;
   padding-left: 40px;
 }
+
 #media {
   display: inline-block;
 }
+
 .fa {
   position: relative;
   top: 30px;
@@ -485,6 +491,13 @@ footer {
   /* Shows the animation when the links are hovered above */
   nav a:hover::before {
     transform: scale(1, 1);
+  }
+
+  /* Photo Carousel Styles */
+
+  img#slideshow {
+    width: 1000px;
+    margin-left: 225px;
   }
 
   /* Shop Styles */
@@ -765,11 +778,12 @@ footer {
     text-align: center;
     overflow: none;
   }
-  
-  #links a:hover { 
+
+  #links a:hover {
     color: var(--westmecOrange);
     text-decoration: underline;
   }
+
   .fa {
     padding: 10px;
     font-size: 3em;
