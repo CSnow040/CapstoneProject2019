@@ -17,12 +17,12 @@
     <title>Precision Machining</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="pm_main.css" />
-<script src="pm_slideshow.js"></script>
+    <script src="pm_slideshow.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-        
+
     <div id="page-container">
         <div id="content-wrap">
             <!-- Nav (Holds Logo along with tabs) -->
@@ -36,16 +36,16 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a href="about.html">About</a>
+                            <a href="#description">About</a>
                         </li>
                         <li>
-                            <a href="CTSO.html">CTSO</a>
+                            <a href="#CTSO">CTSO</a>
                         </li>
                         <li>
                             <a href="shop.html">Shop</a>
                         </li>
                         <li>
-                            <a href="contact.html">Contact</a>
+                            <a href="#contactForm">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -53,25 +53,10 @@
                     <span></span>
                 </label>
             </header>
-            <div>
-                    <div id="arrow-back" class="arrow"><input type="checkbox" id="arrowcheckbox" class="arrow-toggle"><img src="arrow.png" alt="" width="10%" id="back-arrow">
-                        <label for="nav-toggle" class="nav-toggle-label">
-                                <span></span>
-                            </label>
-                        </div>
-                    <div>
-                            <img name="slide" id="slideshow">
-                            <div id="arrow-foward" class="arrow"><input type="checkbox" id="arrowcheckbox" class="arrow-toggle">
-                                <img src="arrow.png" alt="arrow" width="10%">
-                                <label for="arrow-toggle" class="arrow-toggle-label">
-                                        <span></span>
-                                    </label>
-                                </div>
-                            </div>
-                    </div>
+            <img name="slide" id="slideshow">
 
 
-            
+
 
 
             <article id="description">
@@ -111,23 +96,30 @@
                     <p id="thirdBio" class="bioText">"I love America" -Anthony Arias</p>
                 </article>
             </div>
-        </div>
 
-        <article id="CTSO">
+
+            <article id="CTSO">
                 <img src="27. Precision Machining 2.png" alt="" id="officers">
                 <h1>CTSO</h1>
-        
+
                 <h2>Our Mission</h2>
-                <p>Our mission as a CTSO is to set an example, show and encourage other students to do their best, manage the
-                    CTSO as a team not just as individuals, and we keep the CTSO as powerful and fully functional as possible.
+                <p>Our mission as a CTSO is to set an example, show and encourage other students to do their best,
+                    manage
+                    the
+                    CTSO as a team not just as individuals, and we keep the CTSO as powerful and fully functional as
+                    possible.
                 </p>
                 <h2>Our Work</h2>
                 <p>We are a hard working, dedicated, and enthusiastic CTSO and we look forward to any future students or
-                    collaborations with other organizations. Our CTSO officers for the West-MEC Precision Machining Program work
+                    collaborations with other organizations. Our CTSO officers for the West-MEC Precision Machining
+                    Program
+                    work
                     as
                     a team to attend meetings to stay up to date, manage POs and funds for our program, hold events and
                     showcases,
-                    and even arrange timing, permission forms, and costs for conferences for all of the attending students.</p>
+                    and even arrange timing, permission forms, and costs for conferences for all of the attending
+                    students.
+                </p>
                 <h3>Awards</h3>
                 <div>
                     <h4>Regionals:</h4>
@@ -158,16 +150,17 @@
                 </div>
             </article>
 
-            
-        <article id="CTSO">
+
+            <article id="CTSO">
                 <img src="27. Precision Machining 2.png" alt="" id="officers">
                 <h1>About</h1>
                 <h2>Our Mission</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti possimus officiis tenetur ab sunt
-                    repellendus vel incidunt excepturi laborum, doloremque nisi cupiditate facere, praesentium quod expedita
+                    repellendus vel incidunt excepturi laborum, doloremque nisi cupiditate facere, praesentium quod
+                    expedita
                     omnis dolore, itaque aperiam.</p>
                 <h2>Our Work</h2>
-        
+
                 <h3>Awards</h3>
                 <div>
                     <h4>Regionals:</h4>
@@ -178,21 +171,48 @@
                 <div>
                     <h4>Nationals:</h4>
                 </div>
-        
-        
+
+
             </article>
 
-        <span id="adjustMap">
-            <div id="mapP"> <iframe id="map"
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13302.688129094173!2d-112.2928375!3d33.5359117!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1fbd2919e78fa444!2sWestMEC+Central+Campus!5e0!3m2!1sen!2sus!4v1557272063721!5m2!1sen!2sus"
-                    width="800" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-        </span>
+            <form>
+                <fieldset id="contactForm">
+                    <legend>Contact Us</legend>
+                    <div class="top-form">
+                        <div class="inner-form"><label>Name</label> <input name=" name" id="name" type="text"
+                                placeholder="First Name Last Name" required></div>
+                        <div class="inner-form"><label>Email</label><input for="email" id="email" type="text"
+                                placeholder="Email Address" required></div>
+                        <div class="inner-form"><label>Address</label><input name="address" id="address" type="text"
+                                placeholder="Home Address" required></div>
+                    </div>
+                    <div class="middle-form"><label>What is your Current Grade?</label> <select id="gradeList" required>
+                            <option value="Freshmen">Freshmen</option>
+                            <option value="Sophomore">Sophomore</option>
+                            <option value="Junior">Junior</option>
+                            <option value="Senior">Senior</option>
+                        </select>
+                    </div>
+                    <div class="bottom-form">
+                        <label>Do you have any questions?</label><textarea name="userQuestions" id="userQuestions"
+                            cols="50" rows="10"></textarea>
+                    </div>
+                    <button id="submit">Submit</button>
+                </fieldset>
+            </form>
 
+            <span id="adjustMap">
+                <div id="mapP"> <iframe id="map"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13302.688129094173!2d-112.2928375!3d33.5359117!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1fbd2919e78fa444!2sWestMEC+Central+Campus!5e0!3m2!1sen!2sus!4v1557272063721!5m2!1sen!2sus"
+                        width="800" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </span>
 
+        </div>
         <footer>
             <div id="links">
-                <p><a href="https://drive.google.com/file/d/1dH3h6C3VaGFJM_OQs96lUrLw8STLl5Hh/view">Course Overview</a>
+                <p><a href="https://drive.google.com/file/d/1dH3h6C3VaGFJM_OQs96lUrLw8STLl5Hh/view">Course
+                        Overview</a>
                 </p>
                 <p><a href="https://west-mec.edu/advisory-council/">Advisory Council</a></p>
                 <p><a href="https://west-mec.edu/parent-resources/"></a></p>
