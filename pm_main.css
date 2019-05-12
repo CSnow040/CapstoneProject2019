@@ -25,7 +25,8 @@ html {
   background-attachment: fixed;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center
+  background-position: center;
+  scroll-behavior: smooth ;
 }
 
 #map {
@@ -35,12 +36,6 @@ html {
   width: 100vw;
   height: 500px;
 }
-
-#adjustMap {
-  /* width: 800px; */
-  text-align: center;
-}
-
 
 /* Sets a global variable*/
 :root {
@@ -209,8 +204,6 @@ nav a:hover {
 }
 
 
-
-
 /* Article Styles */
 article {
   background: rgba(235, 207, 165, 0.575);
@@ -248,7 +241,7 @@ article p {
 #CTSO h1 {
   color: black;
   margin-bottom: 20px;
-
+font-size: 3em;
 }
 
 #CTSO h2 {
@@ -260,6 +253,12 @@ article p {
   list-style: none;
 }
 
+#CTSO div.awards{
+  display: grid;
+  /* grid-template-columns: repeat(auto, 1fr); */
+  grid-auto-columns: 1fr 1fr 1fr;
+}
+
 #CTSO h3 {
   margin-bottom: 10px;
   font-size: 1.2em;
@@ -269,6 +268,9 @@ article p {
   margin-bottom: 10px;
 }
 
+#CTSO>img{
+width: 100%;
+}
 
 /* Social Media Icons */
 .fa {
@@ -311,21 +313,8 @@ article p {
   background-image: linear-gradient(-60deg, #6ecadc, #e9a820, #e01563, #3eb991);
 }
 
-/* Shop Styles */
-div.shop {
-  display: grid;
-  grid-template-columns: repeat(1fr, 300px);
-  justify-content: center
-}
-
-img.shopItem {
-  width: 400px;
-  height: 500px;
-
-}
-
 #keychain,
-#vicehandle,
+#vicegrip,
 #pens {
   margin-bottom: 20px;
   background: white;
@@ -443,12 +432,8 @@ footer {
 
 img#slideshow {
   width: 100%;
-  height: auto;
 }
 
-div.arrow {
-  display: none;
-}
 
 
 /* Targets screen that are 800 pixels and larger */
@@ -520,17 +505,6 @@ div.arrow {
     transform: scale(1, 1);
   }
 
-  /* Photo Carousel Styles */
-
-
-
-  /* Shop Styles */
-  div.shop {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-    justify-content: center
-  }
-
   /* Footer Styles */
   #page-container {
     position: relative;
@@ -563,8 +537,7 @@ div.arrow {
     text-align: center;
     border: none;
   }
-
-
+  
 
   #bio,
   #CTSO,
@@ -653,8 +626,10 @@ div.arrow {
 
 
   article#CTSO h1 {
+    margin-top: 10px;
     text-align: center;
     color: black;
+    font-size: 3em;
   }
 
   article#CTSO h2 {
@@ -672,10 +647,15 @@ div.arrow {
     margin-left: 10px;
   }
 
+  #CTSO>img{
+      width: 80%;
+      margin: 0 10%;
+  }
+
 
   /* Form Styles */
   fieldset {
-    width: 100%;
+    width: 80%;
     max-width: 800px;
     margin: 50px auto 0;
     padding: 20px;
@@ -811,29 +791,4 @@ div.arrow {
     top: 4px;
   }
 
-  /* Slideshow Styles */
-  img#slideshow {}
-
-  div.arrow {
-    display: block;
-    align-items: center;
-    position: relative
-  }
-
-  #arrow-back {
-    transform: scaleX(-1);
-  }
-
-  .arrow-toggle-label {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  input.arrow-toggle {
-    display: none;
-  }
 }

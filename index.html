@@ -17,7 +17,7 @@
     <title>Precision Machining</title>
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="pm_main.css" />
-    <script src="pm_slideshow.js"></script>
+    <script src="pm_slideshow.js" async></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -53,9 +53,8 @@
                     <span></span>
                 </label>
             </header>
+
             <img name="slide" id="slideshow">
-
-
 
 
 
@@ -99,7 +98,7 @@
 
 
             <article id="CTSO">
-                <img src="27. Precision Machining 2.png" alt="" id="officers">
+                <img src="Skills-USA-1030x668.png" alt="" id="officers">
                 <h1>CTSO</h1>
 
                 <h2>Our Mission</h2>
@@ -121,7 +120,8 @@
                     students.
                 </p>
                 <h3>Awards</h3>
-                <div>
+<div class="awards">
+                <div id="regionals">
                     <h4>Regionals:</h4>
                     <ul>
                         <li>dfajdkljfakjfdlkajfj</li>
@@ -130,7 +130,7 @@
                         <li>adfadfafd</li>
                     </ul>
                 </div>
-                <div>
+                <div class="state">
                     <h4>State:</h4>
                     <ul>
                         <li>dfajdkljfakjfdlkajfj</li>
@@ -139,7 +139,7 @@
                         <li>adfadfafd</li>
                     </ul>
                 </div>
-                <div>
+                <div class="nationals">
                     <h4>Nationals:</h4>
                     <ul>
                         <li>dfajdkljfakjfdlkajfj</li>
@@ -148,35 +148,11 @@
                         <li>adfadfafd</li>
                     </ul>
                 </div>
+            </div>
             </article>
 
-
-            <article id="CTSO">
-                <img src="27. Precision Machining 2.png" alt="" id="officers">
-                <h1>About</h1>
-                <h2>Our Mission</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti possimus officiis tenetur ab sunt
-                    repellendus vel incidunt excepturi laborum, doloremque nisi cupiditate facere, praesentium quod
-                    expedita
-                    omnis dolore, itaque aperiam.</p>
-                <h2>Our Work</h2>
-
-                <h3>Awards</h3>
-                <div>
-                    <h4>Regionals:</h4>
-                </div>
-                <div>
-                    <h4>State:</h4>
-                </div>
-                <div>
-                    <h4>Nationals:</h4>
-                </div>
-
-
-            </article>
-
-            <form>
-                <fieldset id="contactForm">
+            <form id="contactForm">
+                <fieldset id="contact">
                     <legend>Contact Us</legend>
                     <div class="top-form">
                         <div class="inner-form"><label>Name</label> <input name=" name" id="name" type="text"
@@ -229,6 +205,7 @@
             </section>
         </footer>
     </div>
+    <script src="form.js"></script>
 </body>
 
 </html>

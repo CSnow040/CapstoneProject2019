@@ -9,6 +9,7 @@
     Filename: pm_script.js
 */
 //Photo Carousel
+
 // Starting point
 var i = 0;
 var images = [];
@@ -33,4 +34,3 @@ function changeImg() {
 }
 
 window.onload = changeImg;
-//Footer

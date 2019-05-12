@@ -7,117 +7,98 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="pm_main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="shopTemp.css">
 </head>
 
 <body>
-        <header>
-                <img class="logo" src="west-mec.png" />
-                <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-                        <li>
-                            <a href="CTSO.html">CTSO</a>
-                        </li>
-                        <li>
-                            <a href="shop.html">Shop</a>
-                        </li>
-                        <li>
-                            <a href="contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
-                <label for="nav-toggle" class="nav-toggle-label">
-                    <span></span>
-                </label>
-            </header>
-    <div class="shop">
-        <div id="keychain"><img src="precision.jpg" alt="" class="shopItem">
-            <div>$2</div>
-        </div>
-        <div id="vicehandle"><img src="precision.jpg" alt="" class="shopItem"></div>
-        <div id="pens"><img src="precision.jpg" alt="" class="shopItem"></div>
+        <div id="page-container">
+                <div id="content-wrap">
+                    <!-- Nav (Holds Logo along with tabs) -->
+                    <header>
+                        <img class="logo" src="west-mec.png" />
+        
+                        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                        <nav>
+                            <ul>
+                                <li>
+                                    <a href="index.html">Return Home</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <label for="nav-toggle" class="nav-toggle-label">
+                            <span></span>
+                        </label>
+                    </header>
 
         <!-- this is the shopping section -->
 <!-- AFTER YOU GET AN IMAGE name them under item1.png, item2.png and so on.. also fill in the alt of each img naming the item in the respective image -->
 <!-- Add the link to "here" when you have an idea of where it goes -->
-    </div>
+    
     <section id="main">
         <h1>Precision Machining Shop</h1>
-        <p>Welcome to the Precision Machine shop at West-MEC! Start your order <a href="#">here</a></p>
+        <p>Welcome to the Precision Machine shop at West-MEC! Support our CTSO by buying our products. All money gained from the shop is put to good use, being used to send students to state and nationals, and fund other CTSO related activities.</p>
         <section id="items">
 
-        <div class="menu">
-            <input class="select" type="button" value="Add to Order" />
-            <div id="item0">
-                <img src="item0.png" alt="" />
-                <h1>First Item</h1>
-                <p>Description of the first item because it needs one</p>
-                <p>Cost: $100</p>
+        <div class="menuItem">
+            
+            <div id="keychain">
+                <img src="keychain.jpg" alt="" />
+                <h1>Keychain</h1>
+                <p>Show off your support for our CTSO buy buying our exclusive keyring. It's both cheap and stylish, so order one now and show it around!</p>
+                <p><strong><em>Cost: $2</em></strong></p>
             </div>
+            <input class="select" type="button" value="Add to Order"/>
+        </div>
+
+
+        <div class="menuItem">
+            <div id="vicegrip">
+                <img src="vicegrip.jpg" alt="" />
+                <h1>Vice Grip</h1>
+                <p>Buy one of our specially branded vice grips, good for both students and anyone else doing handy work to buy. </p>
+                <p><strong><em>Cost: $7</em></strong></p>
+            </div>
+            <input class="select" type="button" value="Add to Order"/>
         </div>
         <div class="menuItem">
-            <input class="addButton" type="button" value="Add to Order" />
-            <div id="item1">
-                <img src="item1.png" alt="" />
-                <h1>Second Item</h1>
-                <p>Description of the second item because it needs one</p>
-                <p>Cost: $69</p>
+            
+            <div id="pens">
+                <img src="pens.png" alt="">
+                <h1>Pens</h1>
+                <p>Specially designed, black inc pens. Get them in a pack of 5 and show your support for our CTSO!</p>
+                <p><strong><em>Cost: $5</em></strong></p>
             </div>
+            <input class="select" type="button" value="Add to Order"/>
         </div>
-        <div class="menuItem">
-            <input type="button" class="addButton" value="Add to Order">
-            <div id="item2">
-                <img src="item2.png" alt="">
-                <h1>Third Item</h1>
-                <p>Description of the third item because it needs one</p>
-                <p>Cost: $100</p>
-            </div>
-        </div>
-        <div class="menuItem">
-            <input class="addButton" type="button" value="Add to Order">
-            <div id="item4">
-                <img src="item4.png" alt="">
-                <h1>Fourth Item</h1>
-            </div>
-        </div>
+
     </section>
-        <p><input type="button" value="Purchase" id="orderComplete" /></p>
+        <div id="checkout"><button><img src="cart.jpg" alt="cart">Proceed to Checkout</button></div>
 
 </section>
 
-    <aside id="cart">
-        <h1>Your items</h1>
-    </aside>
 
-    <nav id="vertical">
-        <ul>
-            <li><a href=""></a></li>
-        </ul>
-    </nav>
-
-
-    <footer>
-        <div id="links">
-            <p><a href="https://drive.google.com/file/d/1dH3h6C3VaGFJM_OQs96lUrLw8STLl5Hh/view">Course Overview</a></p>
-        </div>
-        <section id="mediaContainer">
-        <div id="media">
-            <a href="#" class="fa fa-facebook" title="Facebook"></a>
-            <a href="#" class="fa fa-twitter" title="Twitter"></a>
-            <a href="#" class="fa fa-instagram" title="Instagram"></a>
-            <a href="#" class="fa fa-linked-in" title="linked-in"></a>
-        </div>
-    </section>
-    </footer>
+                </div>
+                <footer>
+                        <div id="links">
+                            <p><a href="https://drive.google.com/file/d/1dH3h6C3VaGFJM_OQs96lUrLw8STLl5Hh/view">Course
+                                    Overview</a>
+                            </p>
+                            <p><a href="https://west-mec.edu/advisory-council/">Advisory Council</a></p>
+                            <p><a href="https://west-mec.edu/parent-resources/"></a></p>
+                            <p><a href="https://drive.google.com/file/d/1mOyvO0_UizW8YMWSxVwjup5B0Gy35gK5/view"></a></p>
+                            <p><a href=""></a></p>
+                        </div>
+                        <section id="mediaContainer">
+                            <div id="media">
+                                <a href="#" class="fa fa-facebook" title="Facebook"></a>
+                                <a href="#" class="fa fa-twitter" title="Twitter"></a>
+                                <a href="#" class="fa fa-instagram" title="Instagram"></a>
+                                <a href="#" class="fa fa-linked-in" title="linked-in"></a>
+                            </div>
+                        </section>
+                    </footer>
+<!-- <link rel="stylesheet" href="shop.js"> -->
 </div>
-<link rel="stylesheet" href="shop.js">
 </body>
 
 </html>
