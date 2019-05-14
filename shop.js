@@ -2,9 +2,9 @@
 window.onload = cart;
 // cart is meant to be the area where you can keep track of what you select to buy
 function cart() {
-    var addButtons = document.getElementsByClassName("addButton");
+    var addButtons = document.getElementsByClassName("add");
 
-    for (var i = 0; i< addButtons.length; i++) {
+    for (var i = 0; i < addButtons.length; i++) {
         addButtons[i].onclick = add;
     }
 }
@@ -15,9 +15,9 @@ function add(e) {
     var itemID = shopItem.getAttribute("id");
     // clones the shopItem and gets the description through this way
     var description = shopItem.cloneNode(true);
-    var cartBox = document.getElementById("cart");
+    var cartBox = document.getElementById("checkout");
     var duplicateOrder = false;
-    for (var n = cartBox.firstChild; n = n.nextElementSibling; n!==null) {
+    for (var n = cartBox.firstChild; n = n.nextElementSibling; n !== null) {
         if (n.id === itemID) {
             duplicateOrder = true;
             n.firstElementChild.textContent++;
